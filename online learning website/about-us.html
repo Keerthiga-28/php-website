@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Online Learning</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>About Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="learn.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+    <section class="about-us">
+        <div class="overlay">
+            <div class="container">
+                <h2 class="fade-in">Welcome to Online Learning</h2>
+                <p>We are dedicated to providing high-quality online courses that help you gain new skills, advance your career, and achieve your personal and professional goals. Our platform offers a wide range of courses in various fields, including web development, data science, cybersecurity, and more.</p>
+                <p>At Online Learning, we believe that education should be accessible to everyone, regardless of location or background. That's why we've designed our platform to be user-friendly, flexible, and accessible on any device. Learn at your own pace, anytime, anywhere.</p>
+                <p>Join our community of learners and start your journey to success today!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="our-mission">
+        <div class="overlay">
+            <div class="container">
+                <h2 class="fade-in">Our Mission</h2>
+                <p>Our mission is to empower individuals by providing them with the knowledge and skills they need to thrive in today's fast-paced, ever-changing world. We are committed to delivering courses that are engaging, relevant, and up-to-date with the latest industry trends.</p>
+                <p>We work with industry experts to ensure that our courses are not only informative but also practical, giving you the tools and knowledge you can immediately apply in your career or personal life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Team Section with Hover Effects -->
+    <section class="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="instructor1.jpg" alt="Instructor 1">
+                    <h3>John Doe</h3>
+                    <p>Lead Instructor - Web Development</p>
+                </div>
+                <div class="team-member">
+                    <img src="instructor2.jpg" alt="Instructor 2">
+                    <h3>Jane Smith</h3>
+                    <p>Lead Instructor - Data Science</p>
+                </div>
+                <div class="team-member">
+                    <img src="instructor3.jpg" alt="Instructor 3">
+                    <h3>Robert Brown</h3>
+                    <p>Lead Instructor - Cybersecurity</p>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Online Learning. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

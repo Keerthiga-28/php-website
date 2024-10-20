@@ -1,0 +1,315 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    float: left;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+    min-height: 100vh; /* Ensure it takes the full viewport height */
+}
+
+/* About Us, Our Mission Sections */
+.about-us, .our-mission {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #ffffff;
+    min-height: 100vh;
+    position: relative;
+}
+
+.about-us {
+    background-image: url('aboutbg.jpg');
+}
+
+.our-mission {
+    background-image: url('missionbg.jpg');
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
+    padding: 100px 0;
+    min-height: 100%;
+}
+
+/* Text Fade-in Animation */
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Team Section */
+.team {
+    padding: 50px 0;
+    background-image: url('team-bg.jpg'); /* Add the background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; /* Ensure the text is readable */
+    text-align: center;
+}
+
+/* Team Grid */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures even spacing */
+}
+
+/* Team Member */
+.team-member {
+    width: 30%; /* Adjust width for consistent size */
+    min-height: 300px; /* Set a minimum height */
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+    color: #333;
+    box-sizing: border-box; /* Includes padding and border in width/height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers content vertically */
+    transition: transform 0.3s ease;
+}
+
+.team-member img {
+    width: 100px; /* Fixed size for images */
+    height: 100px; /* Fixed size for images */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777777;
+}
+
+/* Features Section */
+.features {
+    padding: 30px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.features h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 30%;
+    padding: 20px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.feature:nth-child(1) {
+    background-color: #FFDDC1;
+}
+
+.feature:nth-child(2) {
+    background-color: #C1E1FF;
+}
+
+.feature:nth-child(3) {
+    background-color: #D1FFC1;
+}
+
+.feature h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+.feature:hover {
+    background-color: #e8491d;
+    color: #ffffff;
+}
+
+/* Courses Section */
+.course-list {
+    padding: 30px 0;
+    background-image: url('background-courses.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.course-list h2, .course-list p {
+    text-align: center;
+    color: #ffffff;
+}
+
+.course-list h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.course-list p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course-item {
+    background: rgba(244, 244, 244, 0.8);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.course-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.course-item .btn {
+    background: #e8491d;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.course-item .btn:hover {
+    background: #35424a;
+    color: #ffffff;
+}
+
+/* Contact Us Section */
+.contact-section {
+    background-image: url('contactbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 60px 0;
+    color: #ffffff;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
